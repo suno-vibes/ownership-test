@@ -1,0 +1,35 @@
+# IMPORTANT: Change "riff-app" to your repo name (e.g., "my-dashboard" for suno-vibes/my-dashboard).
+# The gateway routes by subdomain, so this MUST match or you'll get a 502.
+name = "riff-app"
+main = "vinext/server/app-router-entry"
+compatibility_date = "2026-03-10"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+not_found_handling = "none"
+
+# --- Local development only ---
+# [vars] is stripped by the deploy service before building — nothing here
+# reaches production. Use the Riff dashboard for runtime secrets and config.
+# LOCAL_DEV enables auth fallbacks in src/lib/auth.ts for local dev without
+# the Riff gateway.
+[vars]
+LOCAL_DEV = "true"
+
+# Uncomment when you enable D1 in manifest.json.
+# After creating src/db/schema.ts and running `pnpm db:generate`, apply migrations:
+#   for f in drizzle/*.sql; do pnpm dlx wrangler d1 execute <app-name>-local --local --file="$f"; done
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "<app-name>-local"
+# database_id = "local"
+
+# Uncomment when you enable KV in manifest.json:
+# [[kv_namespaces]]
+# binding = "KV"
+# id = "local"
+
+# Uncomment when you enable R2 in manifest.json:
+# [[r2_buckets]]
+# binding = "R2"
+# bucket_name = "<app-name>-local"

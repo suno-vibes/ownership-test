@@ -1,0 +1,21 @@
+/* Suno design tokens — opt-in via var() references. Delete this file if you don't want them. */
+:root {
+  --suno-bg: #101012;
+  --suno-bg-card: rgba(16, 16, 18, 0.6);
+  --suno-bg-elevated: rgba(30, 30, 35, 0.8);
+  --suno-text: #ffffff;
+  --suno-text-muted: #c0b8af;
+  --suno-text-dim: #7a7068;
+  --suno-text-faint: #5a5550;
+  --suno-gold: #d4a020;
+  --suno-amber: #cc7722;
+  --suno-orange: #e06830;
+  --suno-crimson: #b82040;
+  --suno-magenta: #c22076;
+  --suno-hot-pink: #d4307a;
+  --suno-border: rgba(255, 255, 255, 0.06);
+  --suno-border-hover: rgba(212, 160, 32, 0.3);
+  --suno-radius: 12px;
+  --suno-gradient-aura: linear-gradient(135deg, #d4a020, #cc7722, #b82040, #c22076);
+  --suno-gradient-fire: linear-gradient(135deg, #e06830, #b82040, #c22076);
+}

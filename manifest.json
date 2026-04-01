@@ -1,0 +1,10 @@
+{
+  "description": "What this tool does",
+  "owner": "your-email@suno.com",
+  "contact": "#your-slack-channel",
+  "bindings": {
+    "d1": false,
+    "kv": false,
+    "r2": false
+  }
+}
