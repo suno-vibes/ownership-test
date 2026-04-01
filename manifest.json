@@ -1,7 +1,7 @@
 {
-  "description": "What this tool does",
-  "owner": "your-email@suno.com",
-  "contact": "#your-slack-channel",
+  "description": "Temporary app to test RBAC ownership resolution",
+  "owner": "fake-owner@suno.com",
+  "contact": "#ai-questions",
   "bindings": {
     "d1": false,
     "kv": false,
